@@ -1,0 +1,33 @@
+git cheatsheet
+
+1. git checkout {commit id} - This is will allow you to view the previous commit of git with the git id, and will erase all changes made after that time... This will cause branching.
+2. git add . - This adds the root directory of the file to git to be watched.
+3. git add {file-name} - This adds the file to git to be watched.
+4. git commit -m {message} - This commits changes to git with the particular message explaining the commit.
+5. git commit -m {message} --amend - Updates previous commit instead of creating a new commit.
+5. git log - Shows all the commits made previously and the commit id, with the user who committed the changes.
+6. git init - To initialize a git reposito ry.
+7. ls - To list all the files under the current directory.
+8. git status - To check if there's any change to be committed into git.
+9. git log --all - Shows all the commmit history with the ones made ahead that were previously cleared by using `git checkout {commit id}`
+10. git log --all --graph - Shows all the commmit history in form of branches.
+11. git checkout {commit id} {file-name / .} - This does the same thing as number 1, but it doesn't cause branching, and it actually restores to previous version instead of just viewing it and re-committing again.
+12. git status - This checks if there's any file that needs to be committed.
+
+
+Setting Shortcuts on git.
+
+12. git config --global alias.s "status" - This sets a shortcut of `git s` instead of writing git status.
+13. git confit --global alias.cm "commit -m" - This sets a shortcut of `git commit -m`.
+
+I can still update others to save some time.
+
+
+Ignoring files from being saved on version history
+ - Create a file named .gitignore and put the info inside, it won't be added when saving to git.
+
+
+Removing a project from git tracking
+
+ - On powershell: Remove-Item -Recurse -Force .git
+ - On CMD: rm -rf .git
