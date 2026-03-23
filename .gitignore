@@ -31,3 +31,10 @@ Removing a project from git tracking
 
  - On powershell: Remove-Item -Recurse -Force .git
  - On CMD: rm -rf .git
+
+
+Linking a Remote to a Local Repository
+ - git remote add origin/any nickname you want {github link in https} -This links a local repository to a remote repositiory.
+ - git remote -v - This shows the repository that is linked to the local repository, with the name and the link.
+ - git remote remove origin - This unlinks the repository with the nickname of origin.
+ - git push origin master - This pushes our code in the local repository to the remote repository.
